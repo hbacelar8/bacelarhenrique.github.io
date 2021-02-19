@@ -18,21 +18,67 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: Henrique Bacelar
+name: Henrique Bacelar
+email: bacelarhenrique8@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  A personal blog from someone who has no time to write a personal blog.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "https://bacelarhenrique.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+repository: "bacelarhenrique/bacelarhenrique.github.io"
+github_username:  bacelarhenrique
+# twitter_username: jekyllrb
 
 # Build settings
-theme: minima
+remote_theme: "mmistakes/minimal-mistakes@4.22.0"
+minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
 plugins:
   - jekyll-feed
+  - jekyll-include-cache
+
+include: ["_pages"]
+search: true
+paginate: 5
+paginate_path: /page:num/
+
+author:
+  name: "Henrique Bacelar"
+  bio: A personal blog where I ~~almost never~~ write some random posts about electronic and related articles.
+  avatar: "/assets/images/bio-photo.jpeg"
+  location: "BR"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/bacelarhenrique"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/bacelarhenrique/"
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      show_date: true
+      comments: true
+      share: true
+      related: true
+      toc: true
+      toc_label: Table of Contents
+      toc_sticky: true
+
+    # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      classes: wide
+      author_profile: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
