@@ -1,5 +1,7 @@
 side-navigation:
   - title: Navigation
     children:
+      - title: Home
+        url: /
       - title: "Posts By Year"
         url: /year-archive/
