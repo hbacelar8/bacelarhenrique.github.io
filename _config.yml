@@ -31,7 +31,7 @@ github_username:  bacelarhenrique
 
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.22.0"
-minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
+# minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
 plugins:
   - jekyll-feed
   - jekyll-include-cache
@@ -48,7 +48,7 @@ comments:
 
 author:
   name: "Henrique Bacelar"
-  bio: A personal blog where I ~~almost never~~ write some random posts about electronic and related articles.
+  bio: A blog where I ~~almost never~~ write about electronic and related articles.
   avatar: "/assets/images/bio-photo.jpeg"
   location: "BR"
   links:
@@ -66,6 +66,7 @@ defaults:
       type: posts
     values:
       layout: single
+      classes: wide
       author_profile: true
       read_time: true
       show_date: true
