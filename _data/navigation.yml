@@ -1,5 +1,5 @@
-main:
-  - title: "Posts"
-    url: /year-archive/
-  - title: "About"
-    url: /about/
+side-navigation:
+  - title: Navigation
+    children:
+      - title: "Posts By Year"
+        url: /year-archive/

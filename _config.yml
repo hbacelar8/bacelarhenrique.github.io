@@ -78,6 +78,8 @@ defaults:
       toc_label: Table of Contents
       toc_sticky: true
       toc_icon: fas fa-stream
+      sidebar:
+        nav: "side-navigation"
 
     # _pages
   - scope:
@@ -87,6 +89,8 @@ defaults:
       layout: single
       classes: wide
       author_profile: true
+      sidebar:
+        nav: "side-navigation"
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -1,5 +1,6 @@
 ---
 title:  "Compile and flash STM32 on Linux"
+excerpt: This tutorial shows how to set up the tools for compiling and flashing code into STM32 microcontroller on Ubuntu.
 tags: stm32 ubuntu embedded
 header:
   teaser: assets/images/board.jpeg
