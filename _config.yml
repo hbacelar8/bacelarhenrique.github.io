@@ -31,7 +31,7 @@ github_username:  bacelarhenrique
 
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.22.0"
-minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
+# minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
 plugins:
   - jekyll-feed
   - jekyll-include-cache
@@ -40,6 +40,11 @@ include: ["_pages"]
 search: true
 paginate: 5
 paginate_path: /page:num/
+
+comments:
+  provider: "disqus"
+  disqus:
+    shortname: "bacelarhenrique"
 
 author:
   name: "Henrique Bacelar"
