@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Henrique Bacelar
+title: Digital Dialogue
 name: Henrique Bacelar
 email: bacelarhenrique8@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
@@ -31,7 +31,7 @@ github_username:  bacelarhenrique
 
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.22.0"
-# minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
+minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
 plugins:
   - jekyll-feed
   - jekyll-include-cache

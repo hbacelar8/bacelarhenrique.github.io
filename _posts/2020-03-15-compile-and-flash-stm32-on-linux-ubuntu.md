@@ -1,9 +1,6 @@
 ---
 title:  "Compile and flash STM32 on Linux (Ubuntu)"
 tags: stm32 ubuntu
-header:
-  image: /assets/images/electronics.jpeg
-  caption: "Source: [*Unsplash*](https://unsplash.com)"
 ---
 
 # Introduction
