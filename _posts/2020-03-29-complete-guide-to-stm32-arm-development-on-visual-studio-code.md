@@ -3,7 +3,7 @@ title:  "Complete Guide to STM32 ARM Development on Visual Studio Code"
 excerpt: A guide to programming and debugging embedded projects using STM32 ARM Cortex MCUs on Visual Studio Code.
 tags: stm32 vscode ubuntu debugging embedded
 header:
-  teaser: assets/images/board.jpeg
+  teaser: assets/images/vscode-c.jpg
 ---
 
 # Introduction
