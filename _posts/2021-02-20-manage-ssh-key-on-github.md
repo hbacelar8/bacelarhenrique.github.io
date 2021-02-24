@@ -87,7 +87,7 @@ Type ```yes``` and you should finally see the message
 Hi username! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
-Verify that the resulting message contains your username. If you receive a "permission denied" message, see [Error: Permission denied (publickey)](https://docs.github.com/en/github/authenticating-to-github/error-permission-denied-publickey).
+Verify that the resulting message contains your username. If you receive a "permission denied" message, see [Error: Permission denied (publickey)](https://docs.github.com/en/github/authenticating-to-github/error-permission-denied-publickey){:target="_blank"}.
 
 After following the above steps, you should be able clone and edit your GitHub repositories on your local machine.
 

@@ -9,9 +9,9 @@ header:
 # Introduction
 Visual Studio Code was a great contribution for the coding world. From thousands of plugins, themes and its great IntelliSense, it is a great cross-platform code editor for working with. However, for embedded projects for microcontrollers like those generated for STM32 ARM Cortex MCUs, it's important to know everything that must be configured to the development and debugging of a project.
 
-Therefore, in this article, I'll explain all the steps required for this matter. I'm going to assume that you already have your code structured and a Makefile ready, generated whether by the [STM32CubeMX](https://www.st.com/en/development-tools/stm32cubemx.html) initialisation code generator or downloaded from your MCU's respective website. More information on the official [website](https://www.st.com/en/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus.html).
+Therefore, in this article, I'll explain all the steps required for this matter. I'm going to assume that you already have your code structured and a Makefile ready, generated whether by the [STM32CubeMX](https://www.st.com/en/development-tools/stm32cubemx.html){:target="_blank"} initialisation code generator or downloaded from your MCU's respective website. More information on the official [website](https://www.st.com/en/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus.html){:target="_blank"}.
 
-In this tutorial, I'll be using the [STM32 Nucleo-F101RB](https://www.st.com/en/evaluation-tools/nucleo-f103rb.html) development board with a [STM32F103RB](https://web.archive.org/web/20200807005833/https://www.st.com/en/microcontrollers-microprocessors/stm32f101rb.html) microcontroller. I'll be working on Linux (Ubuntu).
+In this tutorial, I'll be using the [STM32 Nucleo-F101RB](https://www.st.com/en/evaluation-tools/nucleo-f103rb.html){:target="_blank"} development board with a [STM32F103RB](https://www.st.com/en/microcontrollers-microprocessors/stm32f101rb.html){:target="_blank"} microcontroller. I'll be working on Linux (Ubuntu).
 
 # Installations
 Everything that must be installed is listed below.
@@ -24,12 +24,12 @@ Everything that must be installed is listed below.
 - OpenOCD
 
 ## Visual Studio Code
-The protagonist of this story, Visual Studio Code (from now on called vscode) can be downloaded [here](https://code.visualstudio.com/).
+The protagonist of this story, Visual Studio Code (from now on called vscode) can be downloaded [here](https://code.visualstudio.com/){:target="_blank"}.
 
 ## Plugins
-After installing vscode, open it and open the Extensions tab by clicking on its icon on the left bar or by typing `Ctrl+Shift+X`. Search for C/C++ and install it, or download it from vscode's marketplace [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools). This plugin offers language support for C/C++ for vscode, including features such as IntelliSense and debugging.
+After installing vscode, open it and open the Extensions tab by clicking on its icon on the left bar or by typing `Ctrl+Shift+X`. Search for C/C++ and install it, or download it from vscode's marketplace [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools){:target="_blank"}. This plugin offers language support for C/C++ for vscode, including features such as IntelliSense and debugging.
 
-However, we'll be using the Cortex-Debug plugin for debugging. On the same Extensions bar, search for Cortex-Debug and install it. You can also download it from the market place [here](https://marketplace.visualstudio.com/items?itemName=marus25.cortex-debug).
+However, we'll be using the Cortex-Debug plugin for debugging. On the same Extensions bar, search for Cortex-Debug and install it. You can also download it from the market place [here](https://marketplace.visualstudio.com/items?itemName=marus25.cortex-debug){:target="_blank"}.
 
 ## GNU Arm Embedded Toolchain
 The GNU Arm Embedded toolchain can be downloaded from Ubuntu's package manager.
@@ -148,9 +148,9 @@ The configuration varies depending on the microcontroller and board you're using
 }
 ```
 
-It's important to change the **executable** tag to point to your project's ```.elf``` file. The **servertype** tag must be configured as **openocd** and the **device** and **configFiles** according to your microcontroller and board. You can look for more information on the Cortex-Debug plugin's [website](https://marcelball.ca/projects/cortex-debug/cortex-debug-launch-configurations/).
+It's important to change the **executable** tag to point to your project's ```.elf``` file. The **servertype** tag must be configured as **openocd** and the **device** and **configFiles** according to your microcontroller and board. You can look for more information on the Cortex-Debug plugin's [website](https://marcelball.ca/projects/cortex-debug/cortex-debug-launch-configurations/){:target="_blank"}.
 
-It's important to note that what's in the **configFiles** tag is the path to the ```.cfg``` file that will be passed to OpenOCD. With OpenOCD installation, some config files from some generic boards are also installed, but you can always create your own. You can have more information on [OpenOCD's Guide Line](http://openocd.org/doc-release/pdf/openocd.pdf). You can check the available ```.cfg``` files that came with **openocd** installation in the folder ```/usr/share/openocd```.
+It's important to note that what's in the **configFiles** tag is the path to the ```.cfg``` file that will be passed to OpenOCD. With OpenOCD installation, some config files from some generic boards are also installed, but you can always create your own. You can have more information on [OpenOCD's Guide Line](http://openocd.org/doc-release/pdf/openocd.pdf){:target="_blank"}. You can check the available ```.cfg``` files that came with **openocd** installation in the folder ```/usr/share/openocd```.
 
 Now, if you try to start debugging, you'll get an error since the plugin Cortex Debug will try to run the ```arm-none-eabi-gdb``` which no longer comes with the recent versions of the GNU ARM Embedded toolchain available on Ubuntu's repository. That's why we installed the ```gdb-multiarch```. In that case, we can create the following *symlink* to redirect the ```arm-none-eabi-gdb``` command to the ```gdb-multiarch``` binary.
 

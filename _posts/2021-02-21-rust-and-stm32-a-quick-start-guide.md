@@ -230,6 +230,6 @@ cargo flash --chip stm32f103rb --release
 # Go further
 Some links used as reference that will definitely be useful on your projects:
 
-- [The ```stm32f1xx_hal``` crate documentation](https://docs.rs/stm32f1xx-hal/0.7.0/stm32f1xx_hal/index.html)
-- [Some examples using the ```stm32f1xx_hal``` crate](https://github.com/stm32-rs/stm32f1xx-hal/tree/master/examples)
-- [My own repository with some Rust examples using RTIC](https://github.com/bacelarhenrique/rust-embedded-examples)
+- [The ```stm32f1xx_hal``` crate documentation](https://docs.rs/stm32f1xx-hal/0.7.0/stm32f1xx_hal/index.html){:target="_blank"}
+- [Some examples using the ```stm32f1xx_hal``` crate](https://github.com/stm32-rs/stm32f1xx-hal/tree/master/examples){:target="_blank"}
+- [My own repository with some Rust examples using RTIC](https://github.com/bacelarhenrique/rust-embedded-examples){:target="_blank"}

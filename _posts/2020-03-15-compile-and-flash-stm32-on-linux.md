@@ -80,7 +80,7 @@ st-flash write main.bin 0x8000000
 This will flash the the binary file on the flash memory region starting from the memory position ```0x8000000``` (this should be adapted to your device's memory mapping).
 
 # Makefile
-To make the whole process easier, we can automate it with the use of a Makefile. By configuring it with all the parameters we've used before, we can do everything simply by executing it with the ```make``` command on the terminal. More information about GNU Make can be found on it's [website](https://www.gnu.org/software/make/manual/make.html).
+To make the whole process easier, we can automate it with the use of a Makefile. By configuring it with all the parameters we've used before, we can do everything simply by executing it with the ```make``` command on the terminal. More information about GNU Make can be found on it's [website](https://www.gnu.org/software/make/manual/make.html){:target="_blank"}.
 
 ```make
 TARGET=main
