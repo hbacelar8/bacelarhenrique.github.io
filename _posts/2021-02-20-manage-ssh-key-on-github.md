@@ -28,7 +28,9 @@ Open the ```id_rsa_github.pub``` file and copy all its content.
 
 Head to your Github account. At the top right corner, click on your profile picture then **Settings**. Click on **SSH and GPG keys** on the left side menu and then ```New SSH key```.
 
-<img src="/assets/images/ssh-key.png">
+<figure>
+    <a href="/assets/images/ssh-key.png"><img src="/assets/images/ssh-key.png"></a>
+</figure>
 
 Paste the public key that has been copied at the Key box, choose a title (i.e. windows-desktop) and click on the ```Add SSH key``` button.
 
