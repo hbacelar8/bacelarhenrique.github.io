@@ -62,9 +62,9 @@ The ```config``` file should look like this
 
 # Personal github account
 Host github.com
-   HostName github.com
-   User git
-   IdentityFile ~/.ssh/id_rsa_github
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_rsa_github
 ```
 
 # Testing your SSH connection

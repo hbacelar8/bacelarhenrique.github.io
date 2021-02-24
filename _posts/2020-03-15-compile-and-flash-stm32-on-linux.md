@@ -105,14 +105,14 @@ SRCS =  main.c
 $(TARGET): $(TARGET).elf
 
 $(TARGET).elf: $(SRCS)
-        $(CC) $(INCLUDE) $(CFLAGS) $^ -o $@
-        $(CP) -O binary $(TARGET).elf $(TARGET).bin
+    $(CC) $(INCLUDE) $(CFLAGS) $^ -o $@
+    $(CP) -O binary $(TARGET).elf $(TARGET).bin
 
 clean:
-        rm -f *.o $(TARGET).elf $(TARGET).bin
+    rm -f *.o $(TARGET).elf $(TARGET).bin
 
 flash:
-        $(SF) write $(TARGET).bin 0x8000000
+    $(SF) write $(TARGET).bin 0x8000000
 ```
 
 With the Makefile and the ```main.c``` file in the same folder, just type the command ```make``` on the terminal and all the compilation will be done. After that, to flash the code, simply type
