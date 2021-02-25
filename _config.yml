@@ -42,7 +42,7 @@ include: ["_pages"]
 search: true
 paginate: 4
 paginate_path: /page:num/
-logo: "/assets/images/logo.png"
+logo: "/assets/images/logo2.png"
 
 comments:
   provider: "disqus"
