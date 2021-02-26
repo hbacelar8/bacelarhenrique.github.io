@@ -4,6 +4,8 @@ excerpt: A quick start guide to get you working on STM32 development with embedd
 tags: stm32 rust embedded
 header:
   teaser: assets/images/rust.jpg
+  overlay_image: assets/images/rust.jpg
+  overlay_filter: 0.5
 ---
 
 # Preface

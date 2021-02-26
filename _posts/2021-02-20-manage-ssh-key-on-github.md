@@ -4,6 +4,8 @@ excerpt: How to set up a SSH key to your Github account and configure it locally
 tags: ssh key git github
 header:
   teaser: assets/images/git.jpeg
+  overlay_image: assets/images/git.jpeg
+  overlay_filter: 0.5
 ---
 
 # Preface

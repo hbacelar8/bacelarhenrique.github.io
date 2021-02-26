@@ -4,6 +4,8 @@ excerpt: This tutorial shows how to set up the tools for compiling and flashing 
 tags: stm32 ubuntu embedded
 header:
   teaser: assets/images/board.jpeg
+  overlay_image: assets/images/board.jpeg
+  overlay_filter: 0.5
 ---
 
 # Introduction

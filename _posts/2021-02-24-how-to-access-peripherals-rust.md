@@ -4,6 +4,8 @@ excerpt: A guide to accessing memory mapped registers for programming peripheral
 tags: rust embedded peripherals gpio stm32 led
 header:
   teaser: assets/images/peripherals.jpg
+  overlay_image: assets/images/peripherals.jpg
+  overlay_filter: 0.5
 ---
 
 # Preface

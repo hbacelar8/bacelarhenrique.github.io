@@ -4,6 +4,8 @@ excerpt: A guide to programming and debugging embedded projects using STM32 ARM 
 tags: stm32 vscode ubuntu debugging embedded
 header:
   teaser: assets/images/vscode-c.jpg
+  overlay_image: assets/images/vscode-c.jpg
+  overlay_filter: 0.5
 ---
 
 # Introduction
