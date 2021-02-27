@@ -1,7 +1,8 @@
 ---
 title:  "Rust and STM32: A Quick Start Guide"
 excerpt: A quick start guide to get you working on STM32 development with embedded Rust.
-tags: stm32 rust embedded
+tags: stm32 rust-embedded programming
+last_modified_at: "2021-02-27"
 header:
   teaser: assets/images/rust.jpg
   overlay_image: assets/images/rust.jpg
@@ -47,9 +48,9 @@ After installation, you can check your Rust compiler version with
 rustc -V
 ```
 
-Rust installation already comes with Cargo, the Rust's *package manager* that will be used to download Rust package's dependencies, compile the packages, make them distributable and upload them to [crates.io](https://crates.io/).
+Rust installation already comes with Cargo, the Rust's *package manager* that will be used to download Rust package's dependencies, compile the packages, make them distributable and upload them to [crates.io](https://crates.io/){:target="_blank"}.
 
-For bandwidth and disk usage concerns, the default installation only supports native compilation. To add cross compilation support for the ARM Cortex-M architectures, you'll have to install them separately.
+For bandwidth and disk usage concerns, the default installation only supports native compilation. To add cross compilation support for the Arm Cortex-M architectures, you'll have to install them separately.
 
 For Cortex-M0, M0+, and M1 (ARMv6-M architecture):
 
@@ -76,7 +77,7 @@ rustup target add thumbv7em-none-eabihf
 ```
 
 ## Cargo binary utils
-Make sure you have ```build-essential``` installed, which is necessary for having the C compiler used by Cargo
+Make sure you have the ```build-essential``` package installed, which is necessary for having the C compiler used by Cargo
 
 ```bash
 sudo apt install build-essential
@@ -126,7 +127,7 @@ target = "thumbv7m-none-eabi"
 rustflags = [ "-C", "link-arg=-Tlink.x"]
 ```
 
-The next thing we need to do is create the linker script responsible for telling the linker about the memory layout of the device. It must be created in the project root and named ```memory.x```. The following configuration is for the STM32F103RB MCU which has 128 Kbytes of Flash memory and 20 Kbytes of SRAM. Hence, you must adapt it to your device.
+The next thing we need to do is create the linker script responsible for telling the linker about the memory layout of the device. It must be created in the project root and named ```memory.x```. The following configuration is for the STM32F103RB MCU which has 128 Kbytes of Flash memory and 20 Kbytes of SRAM. You must adapt it to your device if it's the case.
 
 ```
 /* memory.x - Linker script for the STM32F103RB */
@@ -140,7 +141,7 @@ MEMORY
 }
 ```
 
-Now, you need to configure the ```Cargo.toml``` file already present in your project root. This is the file where all the dependencies (crates) used in your project must be declared.
+Now, you need to configure the ```Cargo.toml``` file already present in your project root. This is the file where all the dependencies (crates) used in your project must be specified.
 
 For this project in particular, copy the following content to the file
 
@@ -160,7 +161,6 @@ cortex-m = "^0.6.3"       # Access to the generic ARM peripherals
 cortex-m-rt = "^0.6.12"   # Startup code for the ARM Core
 embedded-hal = "^0.2.4"   # Access to generic embedded functions (`set_high`)
 panic-halt = "^0.2.0"     # Panic handler
-nb = "1.0.0"              # Minimal and reusable non-blocking I/O layer
 
 # Access to the STM32F103 HAL.
 [dependencies.stm32f1xx-hal]

@@ -1,7 +1,8 @@
 ---
-title:  "Add and configure SSH keys on Github"
+title:  "Add and Configure SSH Keys on Github"
 excerpt: How to set up a SSH key to your Github account and configure it locally.
-tags: ssh key git github
+tags: git tools
+last_modified_at: "2021-02-27"
 header:
   teaser: assets/images/git.jpeg
   overlay_image: assets/images/git.jpeg
@@ -40,7 +41,7 @@ Paste the public key that has been copied at the Key box, choose a title (i.e. w
 Start a SSH agent with
 
 ```bash
-eval`ssh-agent -s`
+eval `ssh-agent -s`
 ```
 
 Register the key by running
@@ -50,10 +51,10 @@ ssh-add ~/.ssh/id_rsa_github
 ```
 
 # Editing a ```config``` file
-Create a configuration file that will add the different SSH keys you have for all online repositories and emails that you will eventually create.
+Create a configuration file that will add the different SSH keys you have for all git providers and emails that you will eventually create.
 
-```bash
-touch ~/.ssh/config     // Creates config file if it does not exist
+```
+touch ~/.ssh/config     // Create config file if it does not exist
 code ~/.ssh/config .    // Edit config file
 ```
 
@@ -70,7 +71,7 @@ Host github.com
 ```
 
 # Testing your SSH connection
-After you've set up your SSH key and added it to your GitHub account, you can test your connection.
+After you've set up your SSH key and added it to your GitHub account, you can test your connection with
 
 ```bash
 ssh -T git@github.com

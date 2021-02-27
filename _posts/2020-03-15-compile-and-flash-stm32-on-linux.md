@@ -1,17 +1,19 @@
 ---
-title:  "Compile and flash STM32 on Linux"
-excerpt: This tutorial shows how to set up the tools for compiling and flashing code into STM32 microcontroller on Ubuntu.
-tags: stm32 ubuntu embedded
+title:  "Compile and Flash STM32 on Linux"
+excerpt: How to set up the tools for compiling and flashing code into STM32 microcontroller on Ubuntu.
+tags: stm32 tools
+last_modified_at: "2021-02-27"
+show_tags: true
 header:
   teaser: assets/images/board.jpeg
   overlay_image: assets/images/board.jpeg
   overlay_filter: 0.5
 ---
 
-# Introduction
-This tutorial shows how to set up the tools for compiling and flashing code into STM32 microcontroller on Ubuntu. We will be using the ARM GCC compiler toolchain and stlink utils.
+# Preface
+This tutorial shows how to set up the tools for compiling and flashing code into STM32 microcontroller on Ubuntu. We'll be using the GNU Arm Embedded Toolchain and the package STM32 ST-LINK Utility.
 
-The GNU Arm Embedded toolchain contains integrated and validated packages featuring the Arm Embedded GCC compiler, libraries and other GNU tools necessary for bare-metal software development on devices based on the Arm Cortex-M and Cortex-R processors. The toolchains are available for cross-compilation on Microsoft Windows, Linux and Mac OS X host operating systems.
+The GNU Arm Embedded Toolchain contains integrated and validated packages featuring the Arm Embedded GCC compiler, libraries and other GNU tools necessary for bare-metal software development on devices based on the Arm Cortex-M and Cortex-R processors. The toolchains are available for cross-compilation on Microsoft Windows, Linux and Mac OS X host operating systems.
 
 # Installation
 Both ```gcc-arm-none-eabi``` compiler and ```stlink utils``` can be installed via terminal.
@@ -27,7 +29,7 @@ sudo apt install st-utils
 ```
 
 # Compiling and Flashing
-Now that both tools have been installed, the next step is to compile the source code into a ```.elf``` file, so we can generate the ```.bin``` file and finally flash this binary into the STM32 chip.
+Now that both tools have been installed, the next step is to compile the source code into a ```.elf``` file, so we can generate the ```.bin``` file and finally flash this binary into the chip.
 
 ## Compiling
 For instance, to compile a code in a ```main.c``` file into a Cortex M0 microcontroller, just type the following inside the file's folder
@@ -66,7 +68,7 @@ Total               62102
 ```
 
 ## Generating the .BIN file
-Most programmers will not accept a GNU executable as an input file, so we need to convert the information from the .elf file into a .bin binary file. To do so, we'll use the GNU utility called arm-none-eabi-objcopy.
+Most programmers will not accept a GNU executable as an input file, so we need to convert the information from the ```.elf``` file into a ```.bin``` binary file. To do so, we'll use the GNU utility called ```arm-none-eabi-objcopy```.
 
 ```bash
 arm-none-eabi-objcopy -O binary main.elf main.bin
@@ -79,7 +81,7 @@ Finally, to flash the binary file, with the board connected via USB, just type o
 st-flash write main.bin 0x8000000
 ```
 
-This will flash the the binary file on the flash memory region starting from the memory position ```0x8000000``` (this should be adapted to your device's memory mapping).
+This will flash the binary file on the flash memory region starting from the memory position ```0x8000000``` (this should be adapted to your device's memory mapping).
 
 # Makefile
 To make the whole process easier, we can automate it with the use of a Makefile. By configuring it with all the parameters we've used before, we can do everything simply by executing it with the ```make``` command on the terminal. More information about GNU Make can be found on it's [website](https://www.gnu.org/software/make/manual/make.html){:target="_blank"}.
@@ -129,5 +131,5 @@ The following command can be used to remove the ```.o```, ```.elf``` and ```.bin
 make clean
 ```
 
-# Conclusion
-In this tutorial we've seen how to compile and burn a source code into the STM32 microcontroller using the ARM GNU compiler and the stlink utils package on Ubuntu. We've also seen how to automate the whole process using a Makefile, which can be used in the future to a more complex project with all its source files and includes.
+# Afterword
+We have seen how to automate the processes of compiling and flashing code using a Makefile, which can be further used to a more complex project with all its source files and includes.

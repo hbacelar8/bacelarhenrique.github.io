@@ -1,7 +1,8 @@
 ---
 title:  "How to Access Peripherals in Embedded Rust"
 excerpt: A guide to accessing memory mapped registers for programming peripherals in Rust.
-tags: rust embedded peripherals gpio stm32 led
+tags: rust-embedded stm32 programming
+last_modified_at: "2021-02-27"
 header:
   teaser: assets/images/peripherals.jpg
   overlay_image: assets/images/peripherals.jpg
@@ -51,7 +52,7 @@ let gpioa = 0x4001_0800 as *mut GPIOBlock;
 let crl = unsafe { (*gpio).crl };
 ```
 
-You can check all peripheral addresses in the product's [Reference Manual](https://www.st.com/resource/en/reference_manual/cd00171190-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics.pdf){:target="_blank"}.
+You can check all peripherals addresses in the product's [Reference Manual](https://www.st.com/resource/en/reference_manual/cd00171190-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics.pdf){:target="_blank"}.
 
 In this case, there are a couple of problems with this approach:
 
