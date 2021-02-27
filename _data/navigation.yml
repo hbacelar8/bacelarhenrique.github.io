@@ -5,3 +5,5 @@ side-navigation:
         url: /
       - title: "Posts By Year"
         url: /year-archive/
+      - title: "Posts by Tags"
+        url: /tags/
