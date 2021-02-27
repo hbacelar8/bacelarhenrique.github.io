@@ -64,21 +64,21 @@ author:
       url: "https://www.linkedin.com/in/bacelarhenrique/"
 
 category_archive:
-  type: jekyll-archives
+  type: liquid
   path: /categories/
 tag_archive:
-  type: jekyll-archives
+  type: liquid
   path: /tags/
-jekyll-archives:
-  enabled:
-    - categories
-    - tags
-  layouts:
-    category: archive-taxonomy
-    tag: archive-taxonomy
-  permalinks:
-    category: /categories/:name/
-    tag: /tags/:name/
+# jekyll-archives:
+#   enabled:
+#     - categories
+#     - tags
+#   layouts:
+#     category: archive-taxonomy
+#     tag: archive-taxonomy
+#   permalinks:
+#     category: /categories/:name/
+#     tag: /tags/:name/
 
 defaults:
   # _posts
