@@ -1,0 +1,28 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+$new-color: #4db898;
+
+$link-color: $new-color;
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+.icon {
+    color: $new-color;
+}
+
+.pagination li a.current, .pagination li a.current.disabled {
+    background: $new-color;
+}
+
+.toc .nav__title {
+    background: $new-color;
+}
+
+.author__avatar > img {
+    max-width: 130px;
+}
