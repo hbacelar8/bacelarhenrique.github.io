@@ -8,7 +8,7 @@ Hi, there! 👋🏼
 I'm an electronic engineer working with embedded systems. I also spend some time working on some random personal projects in Python, Javascript, etc.
 
 I created this personal blog to have a place where I can post some electronic/programming related articles, specially because I needed a place to keep tutorials
-that could be eventually useful for myself in the future 🧠.
+that could be eventually useful for myself in the future.
 
 ## Some Knowledge
 <p style="text-align: left;">
