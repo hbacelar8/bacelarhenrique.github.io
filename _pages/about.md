@@ -11,14 +11,16 @@ I created this personal blog to have a place where I can post some electronic/pr
 that could be eventually useful for myself in the future 🧠.
 
 ## Some Knowledge
-![image](https://img.shields.io/badge/OS-Linux-blue?style=flat-square&logo=linux&logoColor=white)
-![image](https://img.shields.io/badge/Tools-Git-blue?style=flat-square&logo=git&logoColor=white)
-![image](https://img.shields.io/badge/Code-C-blue?style=flat-square&logo=c&logoColor=white)
-![image](https://img.shields.io/badge/Code-Python-blue?style=flat-square&logo=python&logoColor=white)
-![image](https://img.shields.io/badge/Code-Javascript-blue?style=flat-square&logo=javascript&logoColor=white)
-![image](https://img.shields.io/badge/Code-Rust-blue?style=flat-square&logo=rust&logoColor=white)
-![image](https://img.shields.io/badge/Shell-Bash-blue?style=flat-square&logo=bash&logoColor=white)
-![image](https://img.shields.io/badge/MCU-STM32-blue?style=flat-square&logo=stmicroelectronics&logoColor=white)
+<p style="text-align: left;">
+    <img src="https://img.shields.io/badge/OS-Linux-blue?style=flat-square&amp;logo=linux&amp;logoColor=white" alt="image">
+    <img src="https://img.shields.io/badge/Tools-Git-blue?style=flat-square&amp;logo=git&amp;logoColor=white" alt="image">
+    <img src="https://img.shields.io/badge/Code-C-blue?style=flat-square&amp;logo=c&amp;logoColor=white" alt="image">
+    <img src="https://img.shields.io/badge/Code-Python-blue?style=flat-square&amp;logo=python&amp;logoColor=white" alt="image">
+    <img src="https://img.shields.io/badge/Code-Javascript-blue?style=flat-square&amp;logo=javascript&amp;logoColor=white" alt="image">
+    <img src="https://img.shields.io/badge/Code-Rust-blue?style=flat-square&amp;logo=rust&amp;logoColor=white" alt="image">
+    <img src="https://img.shields.io/badge/Shell-Bash-blue?style=flat-square&amp;logo=bash&amp;logoColor=white" alt="image">
+    <img src="https://img.shields.io/badge/MCU-STM32-blue?style=flat-square&amp;logo=stmicroelectronics&amp;logoColor=white" alt="image">
+</p>
 
 ## Some Github Stats
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=bacelarhenrique&show_icons=true&theme=onedark)](https://github.com/bacelarhenrique)
