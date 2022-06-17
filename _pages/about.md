@@ -23,7 +23,7 @@ that could be eventually useful for myself in the future.
 </p>
 
 ## Some Github Stats
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=bacelarhenrique&show_icons=true&theme=onedark)](https://github.com/bacelarhenrique)
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=hbacelar8&show_icons=true&theme=aura_dark)](https://github.com/hbacelar8)
 
 ## Where To Find Me?
 [![image](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bacelarhenrique/){:target="_blank"}
